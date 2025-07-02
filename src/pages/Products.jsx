@@ -19,7 +19,7 @@ const Products = () => {
     {
       icon: FiBell,
       title: "Fire Alarm Systems",
-      description: "Advanced Sectron fire detection and alarm systems with intelligent monitoring and early warning capabilities.",
+      description: "Advanced fire detection and alarm systems with intelligent monitoring and early warning capabilities.",
       features: ["Intelligent detection", "Early warning alerts", "Zone monitoring", "Remote management"],
       image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
@@ -52,21 +52,15 @@ const Products = () => {
       description: "Premium fire extinguishers and suppression systems",
       logo: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=100&q=80",
       link: "/bavaria-firefighting"
-    },
-    {
-      name: "Sectron Alarm Systems",
-      description: "Advanced fire detection and alarm systems",
-      logo: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=100&q=80",
-      link: "/sectron-alarms"
     }
   ];
 
   return (
     <>
       <Helmet>
-        <title>Fire Safety Products - Bavaria & Sectron Equipment | AlTawfeek Engineering</title>
-        <meta name="description" content="Comprehensive fire safety products including Bavaria fire extinguishers, Sectron alarm systems, detection systems & suppression equipment. Professional installation in Egypt." />
-        <meta name="keywords" content="fire extinguishers Egypt, Bavaria fire fighting products, Sectron alarm systems, fire detection equipment, fire suppression systems, fire safety products Egypt" />
+        <title>Fire Safety Products - Bavaria Equipment & Detection Systems | AlTawfeek Engineering</title>
+        <meta name="description" content="Comprehensive fire safety products including Bavaria fire extinguishers, alarm systems, detection systems & suppression equipment. Professional installation in Egypt." />
+        <meta name="keywords" content="fire extinguishers Egypt, Bavaria fire fighting products, fire detection equipment, fire suppression systems, fire safety products Egypt" />
         <link rel="canonical" href="https://altawfeek-engineering.com/products" />
       </Helmet>
 
@@ -165,35 +159,32 @@ const Products = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {brands.map((brand, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-white p-8 rounded-lg shadow-lg"
-              >
-                <div className="flex items-center mb-6">
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="w-20 h-12 object-cover rounded mr-4"
-                  />
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">{brand.name}</h3>
-                    <p className="text-gray-600">{brand.description}</p>
-                  </div>
+          <div className="flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full"
+            >
+              <div className="flex items-center mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=100&q=80"
+                  alt="Bavaria Fire Fighting Equipment"
+                  className="w-20 h-12 object-cover rounded mr-4"
+                />
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">Bavaria Fire Fighting</h3>
+                  <p className="text-gray-600">Premium fire extinguishers and suppression systems</p>
                 </div>
-                <Link
-                  to={brand.link}
-                  className="inline-flex items-center space-x-2 text-red-600 font-semibold hover:text-red-700"
-                >
-                  <span>Learn More</span>
-                  <SafeIcon icon={FiArrowRight} className="h-4 w-4" />
-                </Link>
-              </motion.div>
-            ))}
+              </div>
+              <Link
+                to="/bavaria-firefighting"
+                className="inline-flex items-center space-x-2 text-red-600 font-semibold hover:text-red-700"
+              >
+                <span>Learn More</span>
+                <SafeIcon icon={FiArrowRight} className="h-4 w-4" />
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>

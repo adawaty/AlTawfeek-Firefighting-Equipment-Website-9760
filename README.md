@@ -1,6 +1,6 @@
 # AlTawfeek Engineering - Fire Safety Equipment Website
 
-A professional, SEO-optimized website for AlTawfeek Engineering, a leading fire safety equipment supplier in Egypt and authorized distributor of Bavaria Fire Fighting and Sectron alarm systems.
+A professional, SEO-optimized website for AlTawfeek Engineering, a leading fire safety equipment supplier in Egypt and authorized distributor of Bavaria Fire Fighting equipment.
 
 ## 🚀 Features
 
@@ -11,7 +11,6 @@ A professional, SEO-optimized website for AlTawfeek Engineering, a leading fire 
 - **Services** - Professional services offered
 - **Contact** - Multi-channel contact options
 - **Bavaria** - Dedicated Bavaria Fire Fighting products
-- **Sectron** - Dedicated Sectron alarm systems
 
 ### SEO Optimization
 - React Helmet for meta tags and structured data
@@ -77,7 +76,7 @@ The website is fully responsive and optimized for:
 
 ### Industry SEO
 - Fire safety equipment keywords
-- Brand-specific pages (Bavaria, Sectron)
+- Brand-specific pages (Bavaria)
 - Service-specific content optimization
 
 ### Technical SEO
@@ -134,7 +133,6 @@ npm run lint
 ## 🏢 Authorized Brands
 
 - **Bavaria Fire Fighting** - Premium fire extinguishers
-- **Sectron Alarm Systems** - Advanced fire detection
 
 ## 📋 Services Offered
 

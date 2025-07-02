@@ -17,7 +17,7 @@ const Home = () => {
     {
       icon: FiAward,
       title: "Authorized Distributor",
-      description: "Official distributor of Bavaria Fire Fighting and Sectron alarm systems in Egypt."
+      description: "Official distributor of Bavaria Fire Fighting and premium fire safety equipment in Egypt."
     },
     {
       icon: FiUsers,
@@ -41,16 +41,17 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>AlTawfeek Engineering - Fire Safety Equipment Supplier in Egypt | Bavaria & Sectron Distributor</title>
-        <meta name="description" content="Leading fire safety equipment supplier in 10th of Ramadan, Egypt. Authorized distributor of Bavaria Fire Fighting & Sectron alarm systems. Professional installation & maintenance services." />
-        <meta name="keywords" content="fire safety equipment Egypt, Bavaria fire fighting distributor, Sectron alarm systems, fire extinguishers Egypt, 10th Ramadan fire safety, firefighting equipment supplier" />
+        <title>AlTawfeek Engineering - Fire Safety Equipment Supplier in Egypt | Bavaria Distributor</title>
+        <meta name="description" content="Leading fire safety equipment supplier in 10th of Ramadan, Egypt. Authorized distributor of Bavaria Fire Fighting equipment. Professional installation & maintenance services." />
+        <meta name="keywords" content="fire safety equipment Egypt, Bavaria fire fighting distributor, fire extinguishers Egypt, 10th Ramadan fire safety, firefighting equipment supplier" />
         <meta property="og:title" content="AlTawfeek Engineering - Fire Safety Equipment Supplier in Egypt" />
-        <meta property="og:description" content="Leading fire safety equipment supplier in Egypt. Authorized distributor of Bavaria Fire Fighting & Sectron alarm systems." />
+        <meta property="og:description" content="Leading fire safety equipment supplier in Egypt. Authorized distributor of Bavaria Fire Fighting equipment." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1751497063655-color_logo_on_white.png" />
         <link rel="canonical" href="https://altawfeek-engineering.com/" />
       </Helmet>
 
-      {/* Hero Section */}
+      {/* Hero Section with Enhanced Logo */}
       <section className="relative bg-gradient-to-r from-red-600 to-red-800 text-white py-20">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,11 +61,31 @@ const Home = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Egypt's Leading <span className="text-yellow-400">Fire Safety</span> Equipment Supplier
-              </h1>
+              {/* Enhanced Company Branding */}
+              <div className="flex items-center mb-8">
+                <div className="bg-white p-4 rounded-xl shadow-lg mr-6">
+                  <img 
+                    src="https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1751497063655-color_logo_on_white.png" 
+                    alt="AlTawfeek Engineering Logo" 
+                    className="h-20 w-auto object-contain"
+                    style={{
+                      imageRendering: '-webkit-optimize-contrast',
+                      imageRendering: 'crisp-edges',
+                      filter: 'contrast(1.15) saturate(1.2)'
+                    }}
+                  />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold text-white mb-1">AlTawfeek Engineering</h1>
+                  <p className="text-yellow-400 font-semibold">Fire Safety Equipment Supplier</p>
+                </div>
+              </div>
+
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Egypt's Leading <span className="text-yellow-400">Fire Safety</span> Solutions Provider
+              </h2>
               <p className="text-xl mb-8 text-gray-100">
-                Authorized distributor of Bavaria Fire Fighting and Sectron alarm systems. Protecting lives and property across Egypt since 2010.
+                Authorized distributor of Bavaria Fire Fighting and premium fire safety equipment. Protecting lives and property across Egypt since 2010.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -200,19 +221,19 @@ const Home = () => {
               <div className="flex items-center mb-6">
                 <img
                   src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=100&q=80"
-                  alt="Sectron Alarm Systems"
+                  alt="Fire Detection Systems"
                   className="w-20 h-12 object-cover rounded mr-4"
                 />
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Sectron Alarms</h3>
-                  <p className="text-red-600 font-medium">Advanced Detection Systems</p>
+                  <h3 className="text-2xl font-bold text-gray-900">Fire Detection Systems</h3>
+                  <p className="text-red-600 font-medium">Advanced Safety Technology</p>
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                State-of-the-art fire detection and alarm systems from Sectron, providing early warning and comprehensive fire safety monitoring.
+                State-of-the-art fire detection and alarm systems providing early warning and comprehensive fire safety monitoring for all applications.
               </p>
               <Link
-                to="/sectron-alarms"
+                to="/products"
                 className="text-red-600 font-semibold hover:text-red-700 flex items-center space-x-2"
               >
                 <span>Learn More</span>

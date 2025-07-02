@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
-const { FiMenu, FiX, FiShield, FiPhone } = FiIcons;
+const { FiMenu, FiX, FiPhone } = FiIcons;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,15 +23,24 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="bg-red-600 p-2 rounded-lg">
-              <SafeIcon icon={FiShield} className="h-8 w-8 text-white" />
+        <div className="flex justify-between items-center h-24">
+          {/* Enhanced Logo */}
+          <Link to="/" className="flex items-center space-x-4 hover:opacity-90 transition-opacity duration-200">
+            <div className="bg-white p-2 rounded-lg shadow-sm border border-gray-100">
+              <img 
+                src="https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1751497063655-color_logo_on_white.png" 
+                alt="AlTawfeek Engineering - Fire Safety Equipment Supplier in Egypt" 
+                className="h-16 w-auto object-contain"
+                style={{
+                  imageRendering: '-webkit-optimize-contrast',
+                  imageRendering: 'crisp-edges',
+                  filter: 'contrast(1.1) saturate(1.1)'
+                }}
+              />
             </div>
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">AlTawfeek</h1>
-              <p className="text-sm text-red-600 font-medium">Engineering</p>
+            <div className="hidden sm:block">
+              <h1 className="text-lg font-bold text-gray-900 leading-tight">AlTawfeek Engineering</h1>
+              <p className="text-sm text-red-600 font-medium">Fire Safety Equipment</p>
             </div>
           </Link>
 

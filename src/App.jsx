@@ -11,7 +11,6 @@ import Products from './pages/Products';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Bavaria from './pages/Bavaria';
-import Sectron from './pages/Sectron';
 import useScrollTop from './hooks/useScrollTop';
 import usePageTracking from './hooks/usePageTracking';
 import './App.css';
@@ -31,7 +30,6 @@ function AppContent() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/bavaria-firefighting" element={<Bavaria />} />
-          <Route path="/sectron-alarms" element={<Sectron />} />
         </Routes>
       </main>
       <Footer />

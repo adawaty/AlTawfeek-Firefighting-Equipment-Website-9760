@@ -33,7 +33,7 @@ const About = () => {
   const milestones = [
     { year: "2010", event: "AlTawfeek Engineering founded in 10th of Ramadan" },
     { year: "2012", event: "Became authorized distributor of Bavaria Fire Fighting" },
-    { year: "2015", event: "Added Sectron alarm systems to our portfolio" },
+    { year: "2015", event: "Expanded product portfolio with advanced detection systems" },
     { year: "2018", event: "Expanded operations across Egypt" },
     { year: "2020", event: "Reached 500+ successful installations" },
     { year: "2024", event: "Leading fire safety equipment supplier in Egypt" }
@@ -43,8 +43,8 @@ const About = () => {
     <>
       <Helmet>
         <title>About AlTawfeek Engineering - Fire Safety Experts in Egypt Since 2010</title>
-        <meta name="description" content="Learn about AlTawfeek Engineering, Egypt's trusted fire safety equipment supplier since 2010. Based in 10th of Ramadan, we're authorized distributors of Bavaria & Sectron systems." />
-        <meta name="keywords" content="AlTawfeek Engineering history, fire safety company Egypt, 10th Ramadan engineering company, Bavaria Sectron distributor Egypt" />
+        <meta name="description" content="Learn about AlTawfeek Engineering, Egypt's trusted fire safety equipment supplier since 2010. Based in 10th of Ramadan, we're authorized distributors of Bavaria Fire Fighting equipment." />
+        <meta name="keywords" content="AlTawfeek Engineering history, fire safety company Egypt, 10th Ramadan engineering company, Bavaria distributor Egypt" />
         <link rel="canonical" href="https://altawfeek-engineering.com/about" />
       </Helmet>
 
@@ -79,7 +79,7 @@ const About = () => {
                 Founded in 2010 in the industrial heart of 10th of Ramadan City, AlTawfeek Engineering began with a simple mission: to provide Egypt with world-class fire safety solutions that protect what matters most.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                As an authorized distributor of Bavaria Fire Fighting equipment and Sectron alarm systems, we've built our reputation on reliability, expertise, and an unwavering commitment to safety standards.
+                As an authorized distributor of Bavaria Fire Fighting equipment and premium fire safety systems, we've built our reputation on reliability, expertise, and an unwavering commitment to safety standards.
               </p>
               <p className="text-lg text-gray-700">
                 Today, we serve businesses across Egypt, from small enterprises to large industrial complexes, providing comprehensive fire safety solutions backed by professional installation and 24/7 support.
