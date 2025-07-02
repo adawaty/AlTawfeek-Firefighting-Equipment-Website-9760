@@ -35,14 +35,14 @@ const Contact = () => {
     {
       icon: FiPhone,
       title: "Phone",
-      details: ["+20 XXX XXX XXXX", "Emergency: +20 XXX XXX XXXX"],
-      href: "tel:+20XXXXXXXXX"
+      details: ["+20 100 575 1057", "+20 110 100 7157"],
+      href: "tel:+201005751057"
     },
     {
       icon: FiMail,
       title: "Email",
-      details: ["info@altawfeek-eng.com", "support@altawfeek-eng.com"],
-      href: "mailto:info@altawfeek-eng.com"
+      details: ["info@altawfeek-engineering.com", "support@altawfeek-engineering.com"],
+      href: "mailto:info@altawfeek-engineering.com"
     },
     {
       icon: FiMapPin,
@@ -71,7 +71,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact AlTawfeek Engineering - Fire Safety Experts in 10th of Ramadan, Egypt</title>
-        <meta name="description" content="Contact AlTawfeek Engineering for fire safety solutions in Egypt. Located in 10th of Ramadan. Free consultation, 24/7 emergency support. Call now for expert service." />
+        <meta name="description" content="Contact AlTawfeek Engineering for fire safety solutions in Egypt. Located in 10th of Ramadan. Free consultation, 24/7 emergency support. Call +20 100 575 1057 for expert service." />
         <meta name="keywords" content="contact AlTawfeek Engineering, fire safety consultation Egypt, 10th Ramadan fire safety, emergency fire support, fire safety quote Egypt" />
         <link rel="canonical" href="https://altawfeek-engineering.com/contact" />
         <meta property="og:title" content="Contact AlTawfeek Engineering - Fire Safety Experts" />
@@ -252,13 +252,22 @@ const Contact = () => {
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h3>
                       {info.details.map((detail, detailIndex) => (
                         <p key={detailIndex} className="text-gray-600 mb-1">
-                          {info.href && detailIndex === 0 ? (
+                          {info.href && detailIndex === 0 && info.title === "Phone" ? (
+                            <>
+                              <a href="tel:+201005751057" className="hover:text-green-600 transition-colors block">
+                                {detail}
+                              </a>
+                              <a href="tel:+201101007157" className="hover:text-green-600 transition-colors block">
+                                {info.details[1]}
+                              </a>
+                            </>
+                          ) : info.href && detailIndex === 0 && info.title === "Email" ? (
                             <a href={info.href} className="hover:text-green-600 transition-colors">
                               {detail}
                             </a>
-                          ) : (
+                          ) : detailIndex < 1 || info.title !== "Phone" ? (
                             detail
-                          )}
+                          ) : null}
                         </p>
                       ))}
                     </div>
@@ -272,13 +281,22 @@ const Contact = () => {
                 <p className="text-red-700 mb-4">
                   For urgent fire safety emergencies, call our 24/7 hotline:
                 </p>
-                <a
-                  href="tel:+20XXXXXXXXX"
-                  className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 inline-flex items-center space-x-2"
-                >
-                  <SafeIcon icon={FiPhone} className="h-5 w-5" />
-                  <span>Emergency Hotline</span>
-                </a>
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <a
+                    href="tel:+201005751057"
+                    className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 inline-flex items-center space-x-2"
+                  >
+                    <SafeIcon icon={FiPhone} className="h-5 w-5" />
+                    <span>+20 100 575 1057</span>
+                  </a>
+                  <a
+                    href="tel:+201101007157"
+                    className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 inline-flex items-center space-x-2"
+                  >
+                    <SafeIcon icon={FiPhone} className="h-5 w-5" />
+                    <span>+20 110 100 7157</span>
+                  </a>
+                </div>
               </div>
 
               {/* Map */}

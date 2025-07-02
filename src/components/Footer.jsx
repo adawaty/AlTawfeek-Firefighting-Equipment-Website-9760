@@ -70,14 +70,19 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <SafeIcon icon={FiPhone} className="h-5 w-5 text-red-400" />
-                <a href="tel:+20XXXXXXXXX" className="text-gray-300 hover:text-red-400 transition-colors">
-                  +20 XXX XXX XXXX
-                </a>
+                <div className="text-gray-300">
+                  <a href="tel:+201005751057" className="hover:text-red-400 transition-colors block">
+                    +20 100 575 1057
+                  </a>
+                  <a href="tel:+201101007157" className="hover:text-red-400 transition-colors block">
+                    +20 110 100 7157
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <SafeIcon icon={FiMail} className="h-5 w-5 text-red-400" />
-                <a href="mailto:info@altawfeek-eng.com" className="text-gray-300 hover:text-red-400 transition-colors">
-                  info@altawfeek-eng.com
+                <a href="mailto:info@altawfeek-engineering.com" className="text-gray-300 hover:text-red-400 transition-colors">
+                  info@altawfeek-engineering.com
                 </a>
               </div>
               <div className="flex items-start space-x-3">

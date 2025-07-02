@@ -127,8 +127,8 @@ npm run lint
 
 **AlTawfeek Engineering**
 - Location: 10th of Ramadan City, Sharqia Governorate, Egypt
-- Phone: +20 XXX XXX XXXX
-- Email: info@altawfeek-eng.com
+- Phone: +20 100 575 1057 / +20 110 100 7157
+- Email: info@altawfeek-engineering.com
 - Emergency: 24/7 Support Available
 
 ## 🏢 Authorized Brands

@@ -51,7 +51,7 @@ const Header = () => {
               </Link>
             ))}
             <a
-              href="tel:+20XXXXXXXXX"
+              href="tel:+201005751057"
               className="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors duration-200 flex items-center space-x-2"
             >
               <SafeIcon icon={FiPhone} className="h-4 w-4" />
@@ -92,7 +92,7 @@ const Header = () => {
                 </Link>
               ))}
               <a
-                href="tel:+20XXXXXXXXX"
+                href="tel:+201005751057"
                 className="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors duration-200 flex items-center space-x-2 w-fit"
               >
                 <SafeIcon icon={FiPhone} className="h-4 w-4" />

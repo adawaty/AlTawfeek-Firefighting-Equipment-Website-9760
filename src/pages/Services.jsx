@@ -250,13 +250,22 @@ const Services = () => {
                   <span className="text-gray-700">Priority support for service contract customers</span>
                 </div>
               </div>
-              <a
-                href="tel:+20XXXXXXXXX"
-                className="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 inline-flex items-center space-x-2"
-              >
-                <SafeIcon icon={FiPhone} className="h-5 w-5" />
-                <span>Emergency Hotline</span>
-              </a>
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a
+                  href="tel:+201005751057"
+                  className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 inline-flex items-center space-x-2"
+                >
+                  <SafeIcon icon={FiPhone} className="h-5 w-5" />
+                  <span>+20 100 575 1057</span>
+                </a>
+                <a
+                  href="tel:+201101007157"
+                  className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 inline-flex items-center space-x-2"
+                >
+                  <SafeIcon icon={FiPhone} className="h-5 w-5" />
+                  <span>+20 110 100 7157</span>
+                </a>
+              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -293,7 +302,7 @@ const Services = () => {
                 Schedule Consultation
               </Link>
               <a
-                href="tel:+20XXXXXXXXX"
+                href="tel:+201005751057"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
               >
                 Call Now

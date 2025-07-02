@@ -74,7 +74,7 @@ const Home = () => {
                   Get Free Quote
                 </Link>
                 <a
-                  href="tel:+20XXXXXXXXX"
+                  href="tel:+201005751057"
                   className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-colors duration-200 flex items-center justify-center space-x-2"
                 >
                   <SafeIcon icon={FiPhone} className="h-5 w-5" />
